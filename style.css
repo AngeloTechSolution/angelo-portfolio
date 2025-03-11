@@ -28,49 +28,78 @@ body{
     height: 2px;
     background-color: black;
 }
-.hero{
+.hero {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
     height: 100vh;
-    position: relative;
-    overflow: hidden;
 }
-.hero-content{
-    max-width: 50%;
-    padding-left: 5%;
+.hero-content {
+    max-width: 600px;
 }
-.hero-content h1{
-    font-size: 3rem;
-    font-weight: bold;
+.hero-text {
+    max-width: 60vh;
 }
-.hero-buttons .btn{
-    margin-right: 10px;
-    font-size: 1rem;
-    margin-bottom: 50px;
-}
-.hero-image{
-    position: absolute;
-    right: 0;
-    width: 50%;
-    height: 100vh;
+.hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    padding: 10px 20px;
 }
-.hero-image svg{
+.blob {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blob svg {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 480px;
     z-index: 1;
 }
-.hero-image img{
+.profile-img {
+    width: 340px;
     position: relative;
     z-index: 2;
-    max-width: 100%;
-    height: auto;
-    transform: translateY(-100px);
-    overflow: hidden;
+    margin-top: -90px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+    }
+    .hero-content {
+        max-width: 100%;
+        justify-content: start;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+    .hero-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .blob svg {
+        width: 250px;
+    }
+    .profile-img {
+        width: 180px;
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 100%; /* Places it right below the navbar */
+        left: 0;
+        width: 100%;
+        background: white; /* Adjust to match navbar color */
+        z-index: 1000; /* Ensures it appears above content */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better visibility */
+    }
+    .navbar a{
+        padding-left: 10px;
+    }
 }
 /*Project section style*/
 .project-card {

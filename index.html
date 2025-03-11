@@ -8,7 +8,7 @@
     <title>Angelo | Portfolio</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 sticky-top fixed-top">
         <a href="#" class="navbar-brand fw-bold">Michael Angelo Barro</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -23,31 +23,33 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
+    <section class="hero d-flex flex-column-reverse flex-md-row align-items-center justify-content-center text-center text-md-start">
+        <div class="hero-content p-3">
             <p class="text-warning fw-bold">Front-End Developer</p>
             <h1>Hello, my name is Michael Angelo Barro</h1>
-            <p style="max-width: 60vh;">I'm a Bachelor of Science in Information Technology student at Eatern Visayas State University with a passion for front-end development.
-                I enjoy crafting visually appealing and user friendly websites that enhance user experience.
+            <p class="hero-text">I'm a Bachelor of Science in Information Technology student at Eastern Visayas State University with a passion for front-end development.
+                I enjoy crafting visually appealing and user-friendly websites that enhance user experience.
             </p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary text-light">Projects</button>
+            <div class="hero-buttons mt-3">
+                <button class="btn btn-primary text-light me-2">Projects</button>
                 <button class="btn btn-primary text-light">LinkedIn</button>
             </div>
         </div>
-        <div class="hero-image">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#FFC72C" d="M31.5,-44C45.8,-32.9,65.9,-30.4,73.1,-20.8C80.2,-11.2,74.5,5.6,65.2,17.2C55.9,28.8,43.1,35.3,31.7,40.7C20.2,46.2,10.1,50.6,-3.9,55.9C-17.8,61.3,-35.7,67.5,-45.4,61.5C-55.1,55.4,-56.6,37.2,-59.2,21.2C-61.7,5.1,-65.3,-8.6,-63.6,-22.8C-62,-37,-55.1,-51.7,-43.6,-63.7C-32.1,-75.8,-16.1,-85.2,-3.7,-80C8.6,-74.9,17.1,-55.1,31.5,-44Z" transform="translate(100 100)" />
-            </svg>
-            <img src="images/snapedit_1713263712281-removebg-preview.png" alt="profile">
+        <div class="hero-image position-relative">
+            <div class="blob">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#FFC72C" d="M31.5,-44C45.8,-32.9,65.9,-30.4,73.1,-20.8C80.2,-11.2,74.5,5.6,65.2,17.2C55.9,28.8,43.1,35.3,31.7,40.7C20.2,46.2,10.1,50.6,-3.9,55.9C-17.8,61.3,-35.7,67.5,-45.4,61.5C-55.1,55.4,-56.6,37.2,-59.2,21.2C-61.7,5.1,-65.3,-8.6,-63.6,-22.8C-62,-37,-55.1,-51.7,-43.6,-63.7C-32.1,-75.8,-16.1,-85.2,-3.7,-80C8.6,-74.9,17.1,-55.1,31.5,-44Z" transform="translate(100 100)" />
+                </svg>
+                <img src="images/snapedit_1713263712281-removebg-preview.png" alt="profile" class="profile-img">
+            </div>
         </div>
     </section>
-
+    
     <section id="Projects">
         <h1 style="text-align: center; font-family: inter; text-decoration: underline yellow;">Projects</h1>
         <div class="container my-5">
             <div class="row">
-                <div class="col-lg-4 project-card d-flex flex-column flex-lg-row">
+                <div class="col-lg-4 project-card d-flex flex-column-reverse flex-lg-row">
                     <div class="col-lg-6 project-text">
                         <h3 class="project-title">Hotel Management System</h3>
                         <p>A simple Python-based Hotel Management System with a user-friendly GUI built using Tkinter and SQLite. This system allows hotel staff to manage guest check-ins, checkouts, room availability, and reservations efficiently. It features a secure login system, a dynamic guest list, and a seamless CRUD (Create, Read, Update, Delete) functionality for managing hotel data.</p>
@@ -57,11 +59,11 @@
                         <img src="project-images/project3.png" alt="Hotel management system project">
                     </div>
                 </div>
-
-                <div class="col-lg-4 project-card d-flex flex-column flex-lg-row">
+    
+                <div class="col-lg-4 project-card d-flex flex-column-reverse flex-lg-row">
                     <div class="col-lg-6 project-text">
                         <h3 class="project-title">To-Do List</h3>
-                        <p>A interactive To-Do list web application built using HTML, CSS, JavaScript and Boostrap. It allows the users to add, edit and delete tasks while keeping track of completed ones.
+                        <p>An interactive To-Do list web application built using HTML, CSS, JavaScript and Bootstrap. It allows the users to add, edit and delete tasks while keeping track of completed ones.
                             This features responsive design, local storage support and a clean UI for better visual.
                         </p>
                         <a href="https://angelotechsolution.github.io/to-do-list/" class="btn btn-outline-primary">View Project</a>
@@ -70,8 +72,8 @@
                         <img src="project-images/project2.png" alt="To Do list project">
                     </div>
                 </div>
-
-                <div class="col-lg-4 project-card d-flex flex-column flex-lg-row">
+    
+                <div class="col-lg-4 project-card d-flex flex-column-reverse flex-lg-row">
                     <div class="col-lg-6 project-text">
                         <h3 class="project-title">Weather Forecast</h3>
                         <p>A web-based weather forecast application built using HTML, CSS, JavaScript, and Bootstrap. It fetches real-time weather data using an API and displays temperature, humidity, and weather conditions for any city. 
@@ -79,11 +81,11 @@
                         <a href="https://my-api-projects.vercel.app/Weather%20API/weather_API.html" class="btn btn-outline-primary">View Project</a>
                     </div>
                     <div class="col-lg-6 project-img">
-                        <img src="project-images/weather-forecast-project.png" alt="To Do list project">
+                        <img src="project-images/weather-forecast-project.png" alt="Weather Forecast project">
                     </div>
                 </div>
-
-                <div class="col-lg-4 project-card d-flex flex-column flex-lg-row">
+    
+                <div class="col-lg-4 project-card d-flex flex-column-reverse flex-lg-row">
                     <div class="col-lg-6 project-text">
                         <h3 class="project-title">Dog & Cat API Web Page</h3>
                         <p>A fun web application that fetches random dog and cat images using public APIs. Built with HTML, CSS, JavaScript, and Bootstrap, 
@@ -91,29 +93,30 @@
                         <a href="https://my-api-projects.vercel.app/" class="btn btn-outline-primary">View Project</a>
                     </div>
                     <div class="col-lg-6 project-img">
-                        <img src="project-images/image.png" alt="To Do list project">
+                        <img src="project-images/image.png" alt="Dog & Cat API Web Page">
                     </div>
                 </div>
-
-                <div class="col-lg-4 project-card d-flex flex-column flex-lg-row">
+    
+                <div class="col-lg-4 project-card d-flex flex-column-reverse flex-lg-row">
                     <div class="col-lg-6 project-text">
                         <h3 class="project-title">EVSU Parking Management System</h3>
-                        <p>An in-progress web-based Parking Management System for EVSU, designed to streamline parking reservations for students and faculty. The project currently features a responsive front-end, including a login page, account registration, forgot password functionality, and an interactive dashboard. Built using HTML, CSS, JavaScript and Boostrap with plans to integrate PHP and MySQL for backend functionality.
+                        <p>An in-progress web-based Parking Management System for EVSU, designed to streamline parking reservations for students and faculty. The project currently features a responsive front-end, including a login page, account registration, forgot password functionality, and an interactive dashboard. Built using HTML, CSS, JavaScript and Bootstrap with plans to integrate PHP and MySQL for backend functionality.
                             <br><br>
-                            Upcoming features includes:
+                            Upcoming features include:
                             <li>A database for managing users, parking data</li>
-                            <li>QR code based parking access for security</li>
+                            <li>QR code-based parking access for security</li>
                             <li>Admin panel for monitoring parking usage</li>
-                            </p>
+                        </p>
                         <a href="https://evsu-parking-management-system.vercel.app/" class="btn btn-outline-primary">View Project</a>
                     </div>
                     <div class="col-lg-6 project-img">
-                        <img src="project-images/parking-management-system-project.png" alt="To Do list project">
+                        <img src="project-images/parking-management-system-project.png" alt="EVSU Parking Management System">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
