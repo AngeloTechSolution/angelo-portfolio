@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #f5f5f5;
 }
 .navbar a {
@@ -97,11 +97,62 @@ body{
         z-index: 1000; /* Ensures it appears above content */
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better visibility */
     }
-    .navbar a{
+    .navbar a {
         padding-left: 10px;
     }
 }
-/*Project section style*/
+
+/* Additional media queries for better responsiveness */
+@media (max-width: 576px) {
+    .hero {
+        padding: 20px;
+    }
+    .hero-content {
+        padding: 10px;
+    }
+    .hero-text {
+        font-size: 1rem;
+    }
+    .profile-img {
+        width: 150px;
+        margin-top: -60px;
+    }
+    .blob svg {
+        width: 200px;
+    }
+    .navbar a {
+        padding-left: 5px;
+    }
+    .navbar-collapse {
+        top: 100%; /* Places it right below the navbar */
+        left: 0;
+        width: 100%;
+        background: white; /* Adjust to match navbar color */
+        z-index: 1000; /* Ensures it appears above content */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better visibility */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero {
+        padding: 30px;
+    }
+    .hero-content {
+        max-width: 80%;
+    }
+    .hero-text {
+        max-width: 80%;
+    }
+    .profile-img {
+        width: 300px;
+        margin-top: -80px;
+    }
+    .blob svg {
+        width: 400px;
+    }
+}
+
+/* Project section style */
 .project-card {
     background: white;
     border-radius: 20px;
